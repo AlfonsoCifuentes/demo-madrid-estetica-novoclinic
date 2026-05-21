@@ -1,71 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novo Clinic - Innovación Estética</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Outfit', sans-serif; }
-        .mobile-first-container { max-width: 480px; margin: 0 auto; background: #fff; min-height: 100vh; position: relative; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Novo Clinic - Innovación Estética</title>
+  <meta name="description" content="Novo Clinic presenta una propuesta estética innovadora en Madrid con valoración avanzada y protocolos personalizados." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="bg-gray-100">
-    <div class="mobile-first-container shadow-2xl">
-        <!-- Modern Sticky Header -->
-        <header class="p-6 flex justify-between items-center bg-white/80 backdrop-blur-md sticky top-0 z-50">
-            <div class="text-xl font-bold tracking-tight text-emerald-600">novo<span class="text-gray-900">clinic</span></div>
-            <div class="w-10 h-10 bg-emerald-50 rounded-full flex items-center justify-center text-emerald-600">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
-                </svg>
-            </div>
-        </header>
-
-        <!-- Dynamic Content -->
-        <section class="p-6">
-            <h1 class="text-3xl font-bold text-gray-900 mb-4 leading-tight">La estética del futuro, <br>hoy en Madrid.</h1>
-            <p class="text-gray-500 mb-8">Olvídate de las esperas. Reserva tu tratamiento en menos de 1 minuto.</p>
-
-            <!-- Reservation Widget Concept (Business-First: Action Focus) -->
-            <div class="bg-gray-900 rounded-[2.5rem] p-8 text-white shadow-2xl">
-                <h2 class="text-xl font-bold mb-6">Reserva tu cita</h2>
-                <div class="space-y-4">
-                    <div class="bg-white/10 rounded-2xl p-4 flex justify-between items-center">
-                        <span class="text-sm font-medium">Tratamiento</span>
-                        <span class="text-emerald-400 text-sm">Seleccionar</span>
-                    </div>
-                    <div class="bg-white/10 rounded-2xl p-4 flex justify-between items-center">
-                        <span class="text-sm font-medium">Día y Hora</span>
-                        <span class="text-emerald-400 text-sm">Ver disponibilidad</span>
-                    </div>
-                    <button class="w-full bg-emerald-500 text-white py-4 rounded-2xl font-bold mt-4 shadow-lg shadow-emerald-500/20">
-                        Confirmar Reserva
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Visual Proof -->
-        <section class="p-6">
-            <h3 class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Nuestra Clínica</h3>
-            <div class="grid grid-cols-2 gap-3">
-                <img src="https://images.unsplash.com/photo-1527613426441-4da17471b66d?auto=format&fit=crop&q=80&w=400" class="rounded-2xl h-32 w-full object-cover">
-                <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=400" class="rounded-2xl h-32 w-full object-cover">
-            </div>
-        </section>
-
-        <!-- Quick Connect (Mobile-First) -->
-        <div class="px-6 pb-12">
-            <div class="flex items-center gap-4 p-4 bg-emerald-50 rounded-2xl border border-emerald-100">
-                <div class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center text-white text-xl">Tel:</div>
-                <div>
-                    <div class="text-xs text-emerald-800 font-bold">Llámanos directamente</div>
-                    <div class="text-sm text-emerald-600 font-bold">911 414 903</div>
-                </div>
-            </div>
+<body>
+  <header class="site-header">
+    <a href="#inicio" class="brand">Novo Clinic<span>Innovación estética</span></a>
+    <nav class="site-nav" aria-label="Principal">
+      <a href="#sistema">Sistema</a>
+      <a href="#clinica">Nuestra clínica</a>
+      <a href="#contacto">Reserva</a>
+    </nav>
+  </header>
+  <main>
+    <section id="inicio" class="hero-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Estética avanzada · Madrid</p>
+        <h1>La estética del futuro, hoy en Madrid.</h1>
+        <p class="intro">Novo Clinic se presenta como un espacio de estética avanzada donde el diagnóstico digital, la personalización del protocolo y la revisión del resultado pesan tanto como la propia sesión.</p>
+        <div class="hero-actions">
+          <a href="#contacto" class="button button-solid">Reserva tu cita</a>
+          <a href="#sistema" class="button button-outline">Ver sistema</a>
         </div>
-    </div>
+      </div>
+      <div class="hero-stack">
+        <article><span>Diagnóstico</span><strong>Lectura avanzada</strong></article>
+        <article><span>Protocolo</span><strong>Diseño personalizado</strong></article>
+        <article><span>Seguimiento</span><strong>Ajustes medidos</strong></article>
+      </div>
+    </section>
+    <section id="sistema" class="system-shell">
+      <div class="section-header">
+        <p class="eyebrow">Sistema de trabajo</p>
+        <h2>Tecnología, criterio médico y una planificación estética que se puede explicar.</h2>
+      </div>
+      <div class="system-grid">
+        <article><h3>Evaluación avanzada</h3><p>Análisis inicial para detectar prioridades y evitar tratamientos reactivos.</p></article>
+        <article><h3>Protocolo modular</h3><p>Combinación de sesiones y tiempos según respuesta real de la piel.</p></article>
+        <article><h3>Control evolutivo</h3><p>Revisión de resultados y ajustes para mantener coherencia en el plan.</p></article>
+      </div>
+    </section>
+    <section id="clinica" class="clinic-shell">
+      <div class="section-header section-header-light">
+        <p class="eyebrow">Nuestra clínica</p>
+        <h2>Un entorno contemporáneo pensado para decisiones rápidas y seguimiento fino.</h2>
+      </div>
+      <div class="clinic-panel">
+        <p>Consulta en Madrid con reserva previa, primera lectura del caso y calendarización de tratamientos cuando el diagnóstico lo justifica.</p>
+      </div>
+    </section>
+    <section id="contacto" class="cta-shell">
+      <p class="eyebrow">Reserva tu cita</p>
+      <h2>Empieza por una valoración que convierta innovación en un plan útil y concreto.</h2>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>Novo Clinic · Innovación Estética</p>
+    <p>Diagnóstico avanzado, protocolo modular y seguimiento de resultados</p>
+  </footer>
 </body>
 </html>
